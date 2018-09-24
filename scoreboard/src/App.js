@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Title from './components/Title'
 import LightSwitch from './components/LightSwitch'
-import User from './components/User'
-import User1 from './components/User1'
-import User2 from './components/User2'
+// import User from './components/User'
+// import User1 from './components/User1'
+// import User2 from './components/User2'
 
 import UserBoard from './components/UserBoard'
 
@@ -21,11 +21,10 @@ class App extends Component {
         </header>
         <main>
           <Title content="Some Simple Title" />
-          <LightSwitch />
-          <User />
-          <User1 />
-          <User2 />
-          {/* <UserBoard /> */}
+          {/* <LightSwitch /> */}
+          {/* <User /> */}
+         
+          <UserBoard />
         
             {/* <div>
                 <h1>User Board</h1>

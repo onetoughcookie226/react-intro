@@ -22,28 +22,7 @@ render() {
 								<button onClick={this.toggle}>Toggle</button>
 								</div>
 						</p>
-					</div>
-					{/* <div>
-						<p>
-							"User: "
-							<b>Dana</b>
-							<div>
-								<p>Dana is <b>{ this.state.active ? 'present' : 'not present' }</b></p>
-								<button onClick={this.toggle}>Toggle</button>
-								</div>
-						</p>
-					</div> */}
-					{/* <div>
-						<p>
-							"User: "
-							<b>Mark</b>
-							<div>
-								<p>Mark is <b>{ this.state.active ? 'present' : 'not present' }</b></p>
-								<button onClick={this.toggle}>Toggle</button>
-								</div>
-						</p>
-					</div> */}
-					
+					</div>					
 		</div>
 </main>
 	
