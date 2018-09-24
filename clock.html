@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #hour {
+                color: blue;
+            }
+            #min {
+                color:yellow;
+            }
+            #sec{
+                color:orange
+            }
+        </style>
+    </head>
+    <body>
+        <div id="clock">
+            <span id="hour"></span>:
+            <span id="min"></span>:
+            <span id="sec"></span>
+        </div>
+
+    </body>
+    <script>
+
+
+    const displayNumbers = (time) => {
+      if (time > 10){
+        return time
+      } else {
+        return `0${time}`
+      }
+    }
+
+    const newDate = () =>{
+        const time = new Date();
+        const hours = time.getHours()
+        // console.log(hours)
+        const min = time.getMinutes()
+        const sec = time.getSeconds()
+
+        const hoursElement = document.getElementById("hour")
+        hoursElement.innerHTML = hours
+
+        const minElement = document.getElementById("min")
+        minElement.innerHTML = min
+
+        const secElement = document.getElementById("sec")
+        secElement.innerHTML = sec
+    }
+        
+   // var intervalID = window.setInterval(myCallback, 500);
+    // function myCallback() {
+    // }
+    setInterval(() => {newDate()}, 1000)
+
+       
+    </script>
+</html>
